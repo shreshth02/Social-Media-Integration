@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#99D6DD">
+
+    <LinearLayout
+        android:id="@+id/sparks_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:text="Welcome to"
+            android:textSize="18dp"
+            android:textStyle="bold|italic"
+            app:fontFamily="serif"></TextView>
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="200dp"
+            android:layout_height="180dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/sparkslogo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="The Sparks Foundation"
+            android:textSize="16dp"
+            android:textStyle="bold|italic"
+            app:fontFamily="serif"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sparks_logo"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/fblogin_button"
+            android:layout_width="220dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_button"
+            android:drawableLeft="@drawable/fb_logo"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingHorizontal="5dp"
+            android:paddingStart="6dp"
+            android:paddingLeft="6dp"
+            android:text="Login with Facebook"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:textStyle="bold"></Button>
+
+        <Button
+            android:id="@+id/gmaillogin_button"
+            android:layout_width="220dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:background="@drawable/gmail_background_button"
+            android:drawableLeft="@drawable/search"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingHorizontal="5dp"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:text="Sign In with Google"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold"></Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="\u00A9 Shreshth Jaiswal(Intern @The Sparks Foundation)"
+            android:textSize="13dp"></TextView>
+    </LinearLayout>
+</RelativeLayout>
